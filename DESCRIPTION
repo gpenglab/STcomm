@@ -1,0 +1,33 @@
+Package: STcomm
+Type: Package
+Title: Spatial resolved cell-cell communication
+Version: 0.1.2
+Author: c(person("Wenjia","Li",email = "vanja_lee@163.com",role = c("cre","aut")),
+    person("Fangfang","Qu",email = "ffqusibs@gmail.com",role = "aut"), 
+    person("Lingfeng","Liu",email = "LIU_LINGFENG@gzlab.ac.cn",role = "ctb"))
+Maintainer: Wenjia <vanja_lee@163.com>
+Description: To investigate how spatial proximity of cell types may influence 
+    each other and shape the signaling landscape, we can Combine the spatial 
+    cellular colocalizations with their enriched ligand-receptor co-expression 
+    patterns inferred from both spatial and single-cell transcriptomic data to 
+    illustrate the spatially resolved cell interaction.
+    rctd4weights() function will help you tidy the confident weights for every 
+    pixel after RCTD analysis. 
+    cellColocation() function will help you get the co-localized cell type pairs.
+    st_comm() function will help you get the significant cell-cell communication
+    restricted by ligand-receptor co-expressed in co-localized cell type pairs.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+Imports: 
+    CellChat,
+    dplyr,
+    Hmisc,
+    magrittr,
+    Seurat,
+    spacexr (>= 2.0),
+    stringr,
+    tidyr
+Depends: 
+    R (>= 3.5.0)
