@@ -73,7 +73,8 @@ organization.
 cellchat <- readRDS(cellchat)
 st_net <- st_comm(st_obj, weights.df = rctd_multi, ctpairs = colocal_ctps1, cellchat = cellchat)
 
-# or you would like to prepare a data.frame tidyed frome the CellChat object
+# or you would like to prepare a data.frame frome the CellChat object, which 
+contained the communication probability and infered cellular communication network.
 net.df <- subsetCommunication(cellchat)
 net.df$ct_pairs <- paste0(net.df$source, "_", net.df$target)
 st_net <- st_comm(st_obj, weights.df = rctd_multi, ctpairs = colocal_ctps1, cellchat = net.df)
