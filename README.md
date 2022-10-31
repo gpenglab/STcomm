@@ -19,7 +19,7 @@ STcomm R package can be easily installed from Github using devtools:
 devtools::install_github("Vanjia-lee/STcomm")
 ```
 
-## Quick Guide to Getting Started with stComm
+## Quick Guide to Getting Started with STcomm
 
 Firstly, `rctd4weights` function will help you tidy the confident
 weights for every pixel after RCTD analysis.
